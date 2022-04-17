@@ -4,6 +4,7 @@ import SocialProfiles from './SocialProfiles';
 //import profile from './assets/profile.png'; // blank profile
 //import profile from './assets/profile.jpg'; // my profile 1 jpg 
 import profile from './assets/profile1.png'; // my profile 2 png 180x120 
+import Title from './Title';
 class App extends Component {
     state = { displayBio: false};
     toggleDisplayBio = () =>{
@@ -15,7 +16,8 @@ class App extends Component {
         <div>
             <img src={profile} alt='profile' className='profile' />
             <h1>Hello!</h1>
-            <p>My name is Aaron. I'm a software engineer.</p>
+            <p>My name is Aaron.</p>
+            <Title />
             <p>I'm always looking forward to working on meaningful projects.</p>
             {
                 this.state.displayBio ? (
